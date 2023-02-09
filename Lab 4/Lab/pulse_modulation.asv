@@ -1,0 +1,9 @@
+function [tx_smpl, cons] = pulse_modulation(sym_idx, modulation, M, fs, smpl_per_symbl, pulse_name , pulse_shape_mode, varargin)
+[cons, Es_avg] = constellation(M, modulation);
+[p, t] = pulse_shape(pulse_name, fs, smpl_per_symbl)
+if pulse_shape_mode=='kron'
+    tx_smpl = kron(sym_idx,p);
+else
+    disp('Only Kron!')
+end
+end

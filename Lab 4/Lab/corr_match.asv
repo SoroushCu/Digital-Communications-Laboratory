@@ -1,0 +1,12 @@
+function [rx_sym] = corr_match(rx_smpl, p, smpl_per_symbl, rx_mode)
+    if rx_mode=='MatchedFilter'
+        temp = conv(rx_smpl,p);
+        r_index = (1:10)*smpl_per_symbl + 1;
+        rx_sym = temp(r_index);
+    else
+        for i=1:10
+            
+        end
+    end
+    
+end

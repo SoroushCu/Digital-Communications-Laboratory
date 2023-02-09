@@ -1,0 +1,7 @@
+function [b_tx] =  bit_gen( pkt_size, sample_per_smbl)
+
+    k = log2(sample_per_smbl);
+    randomtemp = rand
+
+
+end

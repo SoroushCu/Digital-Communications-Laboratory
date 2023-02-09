@@ -1,0 +1,3 @@
+function [det_sym_idx, rx_sym] = pulse_demodulation(rx_smpl, modulation, M, fs, smpl_per_symbl, pulse_name , rx_mode, varargin)
+[rx_sym] = corr_match(rx_smpl, p, smpl_per_symbl, rx_mode);
+end

@@ -1,0 +1,3 @@
+function [det_sym] = min_dist_detector(rx_sym, constellation);
+    for i=
+end

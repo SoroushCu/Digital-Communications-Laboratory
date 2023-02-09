@@ -1,0 +1,23 @@
+function [b_gray] = gray_code(k)
+%     temp = [0;1];
+%     temp_flipped = flip(temp);
+%     new = [temp;temp_flipped];
+%     pre = [0;0;1;1];
+%     chiz = [pre new];
+%     for i=1:k-2
+%         chiz_fliped = flip(chiz);
+%         new2 = [chiz;chiz_fliped];
+%         pre2 = [zeros(2^(i+1),1),ones(2^(i+1),1)];
+%         size(pre2)
+%         chiz = [pre2 new2];
+%     end
+%     b_gray = chiz;
+    if k == 1
+        b_gray = [0;1];
+    else
+        Zeros = zeros(2^(k-1), 1);
+        Ones = ones(2^(k-1), 1);
+        temp = gray(k-1);
+        
+    end
+end
